@@ -20,7 +20,7 @@ def partition(pivot, array):
     high = len(array) - 2
     length = len(array)
     while True:
-        while low < length - 2 and array[low] < array[-1]:
+        while low < length - 1 and array[low] < array[-1]:
             low += 1
         while high >= 0 and array[high] > array[-1]:
             high -= 1
@@ -30,4 +30,4 @@ def partition(pivot, array):
     array[low], array[-1] = array[-1], array[low]
     return low, array[low]
 
-print(quick_select(4, [30,60,10,0,50,80,90,20,40,70]))
+print(quick_select(3, [30,60,10,0,50,80,90,20,40,70]))
