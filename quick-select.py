@@ -31,3 +31,4 @@ def partition(pivot, array):
     return low, array[low]
 
 print(quick_select(3, [30,60,10,0,50,80,90,20,40,70]))
+
